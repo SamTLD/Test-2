@@ -1,2 +1,7 @@
-// this is my first javascript code!
-console.log('My name is sam');
+let firstName = 'Sam';
+let lastName = 'Arun';
+console.log(firstName,lastName);
+
+let interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);
