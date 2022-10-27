@@ -80,5 +80,69 @@ let person = {
     name : 'Sam'
 }
 person.name = 'Sami';
-console.log(person.name,person.age);*/
+console.log(person.name,person.age);
 
+function greet(firstName) {
+    console.log('Hello '+ firstName);
+}
+greet('Sam');
+
+//Performing a task
+function name(firstName,lastName) {
+    console.log('Hi '+ firstName + ' ' + lastName);
+}
+name('Sam','Arun');
+name('Jhon','Sill');
+
+//Calculating as value
+function squre(number) {
+    return number* number;
+}
+
+let number = squre(3);
+console.log(number);
+
+function again(number, secondNumber){
+    return number + secondNumber;
+}
+
+let number = again(50,70);
+console.log(number);
+
+function maths(number, secondNumber){
+    return number - secondNumber;
+}
+console.log(maths(150,50));
+
+function test(firstName,lastName) {0..0............
+    return firstName + lastName;
+}
+
+console.log(test('Sam ','Arun'));
+
+function person(name) {
+    return name;
+}
+
+let anousment = 'This is';
+
+console.log(anousment,person('Sam'));*/
+
+//this is not working i think. Let's see.
+let baseSalary = 30_000;
+let overtime = 10;
+let rate = 20;
+
+function getWage(baseSalary,overtime,rate){
+    return baseSalary + (overtime*rate);
+}
+
+let employee = {
+    baseSalary : 30_000,
+    overtime : 20,
+    rate : 30,
+    getWage : function() {
+        return this.baseSalary + (this.overtime*this.rate)
+    }
+};
+employee.getWage();
